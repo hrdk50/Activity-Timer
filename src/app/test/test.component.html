@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activity Timer</title>
+  </head>
+  <body>
+    <div style="text-align: center;">
+    <h1>Activity Timer</h1>
+    <div>    
+      <button class="btn-primary btn-lg" (click)="onFirstActivity()" >First Activity</button><br><br>
+      
+      <button class="btn-primary btn-lg" (click)="onSecondActivity()">Second Activity</button>
+    </div><br><br>
+    <div *ngIf="display">
+      <button class="btn-primary btn-lg" (click)="onStratClick()">Start</button><br><br>
+      <p>Your time start now : {{count}}</p>
+    </div>
+    <div>
+      <p *ngIf="timeup" style="color: red; font-size: 50px;">Your time is over</p>
+    </div>
+
+    <div style="margin-top: 50px;">
+        <button class="btn-primary btn-lg" (click)="onClickEnd()">End</button><br><br>
+        <div *ngIf="displayendtime">
+           <p> You take total {{count}} second </p>
+        </div>
+    </div>
+    <div>
+      <button class="btn-primary btn-lg" (click)="onReset()">Reset</button>
+    </div>
+  </div>
+  </body>
+</html>
+

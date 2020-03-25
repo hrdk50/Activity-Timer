@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Activity Timer</title>
+  </head>
+  <body>
+    <div style="text-align: center;">
+    <h1>Activity Timer</h1>
+    <div>
+      <button class="btn-primary btn-lg" (click)="onStratClick()">Start</button>
+      <div *ngIf="display">    
+      <p>Your time start now : {{counter}}</p><br><br>
+      <button class="btn-primary btn-lg">First Activity</button><br><br><br><br>
+      <button class="btn-primary btn-lg">Second Activity</button>
+    </div>
+    </div>
+
+    <div style="margin-top: 50px;">
+        <button class="btn-primary btn-lg" (click)="onClickEnd()">End</button>
+    </div>
+  </div>
+  </body>
+</html>
+
